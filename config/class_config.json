@@ -1,0 +1,42 @@
+[
+  {
+    "class_1": "artificial_surfaces",
+    "class_2": [
+      "urban_fabric",
+      "industrial,commercial_and_transport",
+      "Mine,dump_and_construction_sites",
+      "artificial,non-agricultural_vegetated_areas"
+    ]
+  },
+  {
+    "class_1": "agricultural_areas",
+    "class_2": [
+      "arable_land",
+      "permanent_crops",
+      "pastures",
+      "heterogeneous_agricultural_areas"
+    ]
+  },
+  {
+    "class_1": "forests_and_semi-natural_areas",
+    "class_2": [
+      "forests",
+      "Shrub_and/or_herbaceous_vegetation_associations",
+      "open_spaces_with_little_or_no_vegetation"
+    ]
+  },
+  {
+    "class_1": "wetlands",
+    "class_2": [
+      "inland_wetlands",
+      "coastal_wetlands"
+    ]
+  },
+  {
+    "class_1": "wetlands",
+    "class_2": [
+      "inland_wetlands",
+      "marine_waters"
+    ]
+  }
+]
