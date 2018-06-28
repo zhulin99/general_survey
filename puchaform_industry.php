@@ -190,7 +190,14 @@
 
 <script src="js/ssi-uploader.js"></script>
 <script type="text/javascript">
-    $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:20,allowed:['jpg','gif','png']});
+    $('#ssi-upload').ssi_uploader({
+        url:'utils/uploadfile.php',
+        maxFileSize:20,
+        allowed:['jpg','gif','png','jpeg'],
+        onUpload:function(data){
+
+        },
+    });
 </script>
 
 </body>
