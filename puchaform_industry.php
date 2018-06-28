@@ -193,10 +193,7 @@
     $('#ssi-upload').ssi_uploader({
         url:'utils/uploadfile.php',
         maxFileSize:20,
-        allowed:['jpg','gif','png','jpeg'],
-        onUpload:function(data){
-
-        },
+        allowed:['jpg','gif','png','jpeg']
     });
 </script>
 

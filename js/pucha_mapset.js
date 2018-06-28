@@ -20,7 +20,13 @@ function initMap(){
 	window.onresize=function(){
 		document.getElementById("mapDiv").style.height = document.documentElement.clientHeight-20+"px";
 	}
-	
+
+    map.on('mousemove', function (e) {
+    	var lat = e.latlng.lat.toFixed(4);
+        var lng = e.latlng.lng.toFixed(4);
+        $("#mouse_coords").html('经:' + lng + '，' + '纬:' + lat);
+    })
+
 	//自定义图标
 	var industryIcon = L.icon({
 		iconUrl: 'images/point_industry.png',
@@ -29,7 +35,6 @@ function initMap(){
 		popupAnchor: [0, -28]
 	});	
 
-	
 	//定义popwindow
 	function onEachFeature(feature, layer) {
 		//获取当前点坐标
@@ -98,32 +103,3 @@ function setBaseMap(idName){
 }
 
 
-//通过H5的Geolocation获取当前用户位置
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(this.showPosition, this.showError);
-   	}else { 
-    	alert("该浏览器不支持获取坐标位置！"); 
-   	}
-}
-function showPosition(position){
-	var lat = position.coords.latitude; //纬度
-  	var lag = position.coords.longitude; //经度
-  	alert(lat, lag)
-}
-function showError(error){
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-      alert("定位失败,用户拒绝请求地理定位");
-      break;
-    case error.POSITION_UNAVAILABLE:
-      alert("定位失败,位置信息是不可用的");
-      break;
-    case error.TIMEOUT:
-      alert("定位失败,请求获取用户位置超时");
-      break;
-    case error.UNKNOWN_ERROR:
-      alert("定位失败,定位系统失效");
-      break;
-  }
-};
