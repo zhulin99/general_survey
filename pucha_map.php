@@ -8,6 +8,7 @@
     <title>普查地图</title>
 
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/mtWindow.css">
     <link rel="stylesheet" href="css/pucha_map.css" />
 
     <script src="js/jquery.min.js"></script>
@@ -15,6 +16,7 @@
     <script src="js/esri/esri-leaflet.js"></script>
     <script src="js/data/pointsData.js"></script>
     <script src="js/pucha_mapset.js"></script>
+    <script src="js/laydate/laydate.js"></script>
 
     <style type="text/css">
         #mapDiv{width: 100%; height: 950px; background:#D3EAFA}
@@ -28,6 +30,7 @@
         .edit_pannel .tools .tool{ width: 32px; height: 32px; margin: 8px 0px 0px 15px; float: left; cursor: pointer; }
         .edit_pannel .tools #draw_point{background: url("images/draw_point.png") no-repeat;}
         .edit_pannel .tools #draw_polygon{background: url("images/draw_polygon.png") no-repeat;}
+        .del_obj{width: 32px; height: 32px;  position:fixed; right:30px; top:180px; background: #00aa00; z-index: 9999; cursor: pointer;}
     </style>
 </head>
 
@@ -42,12 +45,81 @@
     <div class="edit_pannel">
         <div class="title">在线编辑</div>
         <div class="tools">
-            <div class="tool" title="企业录入" id="draw_point"></div>
+            <div class="tool" title="企业录入" id="draw_point" onclick="draw_point()"></div>
             <div class="tool" title="画面筛选" id="draw_polygon"></div>
         </div>
     </div>
 
+    <div class="del_obj" onclick="remove_obj()">删除</div>
+
     <div id="mouse_coords"></div>
+
+
+    <div class="window" id="modalwindow">
+        <div class="theme-poptit" id="window_head">
+            <a href="javascript:;" class="close">×</a>
+            <div style=" font-size:16px; margin-left:45%">企业基本信息</div>
+        </div>
+
+        <div class="content">
+            <form>
+                <div class="item">
+                    <div class="left"><label>单位名称：</label></div>
+                    <div class="right"><input type="text" name="name" /></div>
+                </div>
+                <div class="item">
+                    <div class="left"><label>单位代码：</label></div>
+                    <div class="right"><input type="text" name="name_id" /></div>
+                </div>
+                <div class="item">
+                    <div class="left"><label>法人代表：</label></div>
+                    <div class="right"><input type="text" name="daibiao" /></div>
+                </div>
+                <div class="item">
+                    <div class="left"><label>所在地：</label></div>
+                    <div class="right"><input type="text" name="adress" /></div>
+                </div>
+                <div class="item">
+                    <div class="left"><label>经纬度：</label></div>
+                    <div class="right">
+                        <input type="text" name="jing" id="lng" placeholder="经度" style="width: 92px;" />
+                        <input type="text" name="wei" id="lat" placeholder="纬度" style="width:92px;" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left"><label>联系方式：</label></div>
+                    <div class="right"><input type="text" name="tel" /></div>
+                </div>
+
+                <div class="item">
+                    <div class="left"><label>开业时间：</label></div>
+                    <div class="right"><input type="text" name="time" style="width: 180px;" class="laydate-icon" onClick="laydate()" readonly="true" /></div>
+                </div>
+
+                <div class="item" style="height: auto;">
+                    <div class="left"><label>所属行业：</label></div>
+                    <div class="right">
+                        <select name="businessRange" style="width:210px; height: 25px; padding-left: 10px; border-radius: 5px; border: solid 1px #999;">
+                            <option value ="1">工业源</option>
+                            <option value ="2">农业源</option>
+                            <option value="3">生活源</option>
+                            <option value="4">移动源</option>
+                            <option value="5">集中式污染治理设施</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="item" style="margin-top: 30px;">
+                <button type="button" onclick="" style="margin-left: 200px;">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+            </div>
+            <div class="item" style="margin-top: 30px;">
+                <button type="button" onclick="" style="margin-left: 100px;">取&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消</button>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 

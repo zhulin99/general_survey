@@ -3,11 +3,19 @@ var map;
 var customBaselayer;   //底图图层
 var layerLabels;       //底图标注
 
+//自定义图标
+var industryIcon = L.icon({
+    iconUrl: 'images/point_industry.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -28]
+});
+
 
 //初始化地图
 function initMap(){
 	//初始化并加载底图
-	map = L.map("mapDiv").setView([34.277227,117.200364], 12);
+	map = L.map("mapDiv", {drawControl: true}).setView([34.277227,117.200364], 12);
 	// 加载天地图矢量底图
 	customBaselayer = L.esri.basemapLayer('TianDiTuVec')
 	map.addLayer(customBaselayer);  
@@ -26,14 +34,6 @@ function initMap(){
         var lng = e.latlng.lng.toFixed(4);
         $("#mouse_coords").html('经:' + lng + '，' + '纬:' + lat);
     })
-
-	//自定义图标
-	var industryIcon = L.icon({
-		iconUrl: 'images/point_industry.png',
-		iconSize: [32, 32],
-		iconAnchor: [16, 37],
-		popupAnchor: [0, -28]
-	});	
 
 	//定义popwindow
 	function onEachFeature(feature, layer) {
@@ -100,6 +100,36 @@ function setBaseMap(idName){
         layerLabels = L.esri.basemapLayer("TianDiTuSat_A");
         map.addLayer(layerLabels);  
     }
+}
+
+var marker;
+function draw_point() {
+    $(".leaflet-grab").css('cursor','crosshair');
+
+    var lat, lng;
+    map.once('mousedown', function (e) {
+        lat = e.latlng.lat.toFixed(4);
+        lng = e.latlng.lng.toFixed(4);
+        marker = L.marker([lat, lng],{icon: industryIcon}).addTo(map);
+    })
+
+	map.once('mouseup', function (e) {
+        $(".leaflet-grab").css('cursor','-webkit-grab');
+        $('#modalwindow').slideDown(200);
+        $('#modalwindow #lng').val(lng);
+        $('#modalwindow #lat').val(lat);
+
+        $('#modalwindow .close').click(function() {
+            $('#modalwindow').slideUp(200);
+        })
+    })
+}
+
+function remove_obj() {
+	alert("请点击需要删除的目标!");
+    marker.once('click', function(e) {
+        marker.remove();
+    })
 }
 
 

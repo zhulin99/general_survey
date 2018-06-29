@@ -65,7 +65,12 @@
               <div class="item" style="height: auto;">
                   <div class="left"><label>经营范围：</label></div>
                   <div class="right" style="height: auto; margin-top: 8px;">
-                      <textarea cols="50" rows="5" name="businessRange" style="width:208px;" ></textarea>
+                      <select name="businessRange" style="width:208px; height: 25px; padding-left: 10px; border-radius: 5px; border: solid 1px #999;">
+                          <option value ="volvo">Volvo</option>
+                          <option value ="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                          <option value="audi">Audi</option>
+                      </select>
                   </div>
                   <div class="necessary"></div>
               </div>
