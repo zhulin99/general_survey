@@ -3,7 +3,7 @@
 .puchaform_base fieldset legend{font-size:18px; font-weight:bold;}
 .puchaform_base .item{width: 50%; height: 40px; line-height: 40px; float: left;}
 .puchaform_base .item .left{width: 20%; height: 40px; line-height: 40px; float: left; text-align:right}
-.puchaform_base .item .right{width: 34%; height: 40px; line-height: 40px; float: left;}
+.puchaform_base .item .right{width: 80%; height: 40px; line-height: 40px; float: left;}
 .puchaform_base .item .necessary{width: 20%; height: 40px; line-height: 40px; float: left; font-size: 12px; color: red}
 
 .puchaform_base label{width: 100px; }

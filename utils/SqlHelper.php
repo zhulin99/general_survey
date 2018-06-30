@@ -24,8 +24,11 @@ class SqlHelper
         if (mysqli_connect_errno($this->conn)) {
             echo "连接 MySQL 失败: " . mysqli_connect_error();
         }
-        mysqli_query($this->conn, "set character set 'utf8'");//读库
+        mysqli_query($this->conn, "set character set 'utf8'");
         mysqli_query($this->conn, "set names utf8");
+        mysqli_query($this->conn, "set character_set_client=utf8");
+        mysqli_query($this->conn, "set character_set_results=utf8");
+
     }
 
     /***
@@ -45,8 +48,7 @@ class SqlHelper
 
     function execute_dql2($sql)
     {
-        $res = mysqli_query($this->conn, $sql) or die(
-        "execute_dql2 SQL查询语句有误:"+$sql);
+        $res = mysqli_query($this->conn, $sql) or die("execute_dql2 SQL查询语句有误:"+$sql);
         $rs_arr = array();
         while ($rs = mysqli_fetch_row($res)) {
             $rs_arr[] = $rs;
@@ -60,7 +62,7 @@ class SqlHelper
     function execute_dml($sql)
     {
         $res = mysqli_query($this->conn, $sql) or die("dml语句有误:"+$sql);
-        if ($res!=null and $res!="") {
+        if ($res != null and $res!= "") {
             $rows = mysqli_affected_rows($this->conn);
             if ($rows > 0) {
                 return 1;

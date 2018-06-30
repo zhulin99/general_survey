@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
-    <title>工业源</title>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/laydate/laydate.js"></script>
-    <script type="text/javascript" src="js/puchaform.js"></script>
+    <title>工业源污染源信息</title>
 
     <link rel="stylesheet" href="css/ssi-uploader.css"/>
     <link rel="stylesheet" href="css/puchaform_base.css"/>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/laydate/laydate.js"></script>
+    <script type="text/javascript" src="js/puchaform_industry.js"></script>
+
+
 </head>
 
 <body>
@@ -25,22 +27,22 @@
               <div class="item">
                   <div class="left"><label>单位名称：</label></div>
                   <div class="right"><input type="text" name="unit_name"/></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
               <div class="item">
                   <div class="left"><label>单位代码：</label></div>
                   <div class="right"><input type="text" name="unit_code" /></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
               <div class="item">
                   <div class="left"><label>法人代表：</label></div>
                   <div class="right"><input type="text" name="unit_peop" /></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
               <div class="item">
                   <div class="left"><label>所在地：</label></div>
                   <div class="right"><input type="text" name="adress"/></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
               <div class="item">
                   <div class="left"><label>经纬度：</label></div>
@@ -48,31 +50,32 @@
                       <input type="text" name="coordX" placeholder="经度" style="width: 92px;"/>
                       <input type="text" name="coordY" placeholder="纬度" style="width:92px;"/>
                   </div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
               <div class="item">
                   <div class="left"><label>联系方式：</label></div>
                   <div class="right"><input type="text" name="tel" /></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
 
               <div class="item">
                   <div class="left"><label>开业时间：</label></div>
                   <div class="right"><input type="text" name="startTime" style="width: 180px;" class="laydate-icon" onClick="laydate()" readonly="true"/></div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
 
               <div class="item" style="height: auto;">
                   <div class="left"><label>经营范围：</label></div>
-                  <div class="right" style="height: auto; margin-top: 8px;">
-                      <select name="businessRange" style="width:208px; height: 25px; padding-left: 10px; border-radius: 5px; border: solid 1px #999;">
-                          <option value ="volvo">Volvo</option>
-                          <option value ="saab">Saab</option>
-                          <option value="opel">Opel</option>
-                          <option value="audi">Audi</option>
+                  <div class="right">
+                      <select name="businessRange" style="width:210px; height: 25px; padding-left: 10px; border-radius: 5px; border: solid 1px #999;">
+                          <option value ="工业源">工业源</option>
+                          <option value ="农业源">农业源</option>
+                          <option value="生活源">生活源</option>
+                          <option value="移动源">移动源</option>
+                          <option value="集中式污染治理设施">集中式污染治理设施</option>
                       </select>
                   </div>
-                  <div class="necessary"></div>
+<!--                  <div class="necessary"></div>-->
               </div>
           </fieldset>
 
