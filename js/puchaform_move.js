@@ -52,7 +52,7 @@ function submitForm(){
 
     //异步上传表单中的值
     $.ajax({
-        url: "Web/InsertIndustryPlInfo.php",
+        // url: "Web/InsertIndustryPlInfo.php",
         type: "POST",
         data: {'data': formdata},
         success: function(data){

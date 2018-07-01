@@ -34,17 +34,24 @@
         .edit_pannel .tools #draw_polygon{background: url("images/draw_polygon.png") no-repeat;}
         .del_obj{width: 32px; height: 32px;  position:fixed; right:30px; top:180px; background: #00aa00; z-index: 9999; cursor: pointer;}
         .get_geoJson{width: 32px; height: 32px;  position:fixed; right:30px; top:220px; background: #00aa00; z-index: 9999; cursor: pointer;}
+        .legened{width: 150px; height: 200px; position:fixed; right:10px; bottom:10px; z-index:9999; background: #FFFFFF; opacity:0.95; border: solid 2px #C4C3BE;}
+        .legened .title{width: 150px; height: 25px; line-height: 25px; text-align: center; background:#dfdfdf; border-bottom: solid 1px #C4C3BE;}
+        .legened .legenedContent{width: 150px; height: 174px; background: #2D93CA;}
+        .legened .legenedContent .list{width: 150px; height: 34.5px; background: #00aa00;}
     </style>
 </head>
 
 <body>
+    <!--地图内容-->
     <div id="mapDiv"></div>
 
+    <!--底图切换-->
     <div class="changemap">
         <div class="buttonbase" id="TianDiTuVec" href='JavaScript:void(0)' onclick='setBaseMap(this)' style="float: left;">矢量</div>
         <div class="buttonbase" id="TianDiTuSat" href='JavaScript:void(0)' onclick='setBaseMap(this)' style="float: right;">影像</div>
     </div>
 
+    <!--编辑面板-->
     <div class="edit_pannel">
         <div class="title">在线编辑</div>
         <div class="tools">
@@ -55,9 +62,10 @@
 
 <!--    <div class="del_obj" onclick="remove_obj()" title="请点击刚才绘制的点">删除</div>-->
 
+    <!--坐标显示-->
     <div id="mouse_coords"></div>
 
-
+    <!--基本信息录入模态框-->
     <div class="window" id="modalwindow">
         <div class="theme-poptit" id="window_head">
             <a href="javascript:;" class="close">×</a>
@@ -121,9 +129,19 @@
                 <button type="button" onclick="closeWindow()" style="margin-left: 100px;">取&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消</button>
             </div>
         </div>
-
     </div>
 
+    <!--图例及图层控制-->
+    <div class="legened">
+        <div class="title">图 例</div>
+        <div class="legenedContent">
+            <div class="list"></div>
+<!--            <div class="list"></div>-->
+<!--            <div class="list"></div>-->
+<!--            <div class="list"></div>-->
+<!--            <div class="list"></div>-->
+        </div>
+    </div>
 </body>
 
 <script type="text/javascript">

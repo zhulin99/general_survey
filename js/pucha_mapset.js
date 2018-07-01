@@ -8,9 +8,44 @@ var customBaselayer;   //底图图层
 var layerLabels;       //底图标注
 
 
-//自定义图标
+/**
+ * 自定义marker图标
+ */
+//工业源
 var industryIcon = L.icon({
     iconUrl: 'images/point_industry.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -28]
+});
+
+//农业源
+var argicultureIcon = L.icon({
+    iconUrl: 'images/point_agriculture.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -28]
+});
+
+//生活源
+var lifeIcon = L.icon({
+    iconUrl: 'images/point_life.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -28]
+});
+
+//移动源
+var moveIcon = L.icon({
+    iconUrl: 'images/point_move.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -28]
+});
+
+//集中式污染治理设施
+var sheshiIcon = L.icon({
+    iconUrl: 'images/point_sheshi.png',
     iconSize: [32, 32],
     iconAnchor: [16, 37],
     popupAnchor: [0, -28]
@@ -75,7 +110,19 @@ function initMap(){
         return {color: feature.properties.color};
     },
     pointToLayer: function (feature, latlng) {
-		return L.marker(latlng, {icon: industryIcon});
+        var sourceType = feature.properties.industry;
+        switch (sourceType){
+            case "工业源":
+                return L.marker(latlng, {icon: industryIcon});
+            case "农业源":
+                return L.marker(latlng, {icon: argicultureIcon});
+            case "生活源":
+                return L.marker(latlng, {icon: lifeIcon});
+            case "移动源":
+                return L.marker(latlng, {icon: moveIcon});
+            case "集中式污染治理设施":
+                return L.marker(latlng, {icon: sheshiIcon});
+        }
 	},
 	onEachFeature: onEachFeature
 	}).addTo(map);
@@ -109,7 +156,6 @@ function open_win(basicInfo){
             window.open("puchaform_sheshi.php?val=\""+transbasicInfo+"\"", "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=yes, width=1100, height=600, left=400, top=200");
             break;
 	}
-
 }
 
 
@@ -175,6 +221,7 @@ function draw_point() {
 
         $('#modalwindow .close').click(function() {
             $('#modalwindow').slideUp(200);
+            $('#form_basicInfo')[0].reset();
         })
     })
 }
@@ -195,6 +242,7 @@ function remove_obj() {
  */
 function closeWindow() {
     $('#modalwindow').slideUp(200);
+    $('#form_basicInfo')[0].reset();
 }
 
 

@@ -20,8 +20,8 @@ function submitBasicInfo(){
     }
 
     //序列化方式获取表单中所有值
-    var formdata = $('#form_basicInfo').serializeArray()
-    $.param(formdata)
+    var formdata = $('#form_basicInfo').serializeArray();
+    $.param(formdata);
 
     //异步上传表单中的值
     $.ajax({

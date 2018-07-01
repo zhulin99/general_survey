@@ -14,7 +14,6 @@
     <script type="text/javascript" src="js/laydate/laydate.js"></script>
     <script type="text/javascript" src="js/puchaform_industry.js"></script>
 
-
 </head>
 
 <body>
