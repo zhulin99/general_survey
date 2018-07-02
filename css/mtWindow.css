@@ -51,7 +51,7 @@ a:focus {
 }
 
 
-.content {width:700px;  height: 250px; margin-top: 30px; font-size:14px;}
+.content {width:700px;  height: 290px; margin-top: 30px; font-size:14px;}
 .content .item{width: 50%; height: 40px; line-height: 40px; float: left;}
 .content .item .left{width: 30%; height: 40px; line-height: 40px; float: left; text-align:right;}
 .content .item .right{width: 70%; height: 40px; float: left;}

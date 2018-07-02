@@ -17,6 +17,8 @@ class EnterpriseBasicInfo
     private $tel;
     private $startTime;
     private $businessRange;
+    private $block;
+
 
     /**
      * @return mixed
@@ -160,6 +162,22 @@ class EnterpriseBasicInfo
     public function setBusinessRange($businessRange)
     {
         $this->businessRange = $businessRange;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBlock()
+    {
+        return $this->block;
+    }
+
+    /**
+     * @param mixed $block
+     */
+    public function setBlock($block)
+    {
+        $this->block = $block;
     }
 
 }

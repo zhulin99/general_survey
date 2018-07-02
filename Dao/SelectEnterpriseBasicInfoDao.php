@@ -20,8 +20,13 @@ class SelectEnterpriseBasicInfoDao
      * 查询企业基本信息
      * @return int
      */
-    public function SelectEnterpriseBasicInfo(){
-        $sql = "SELECT * FROM enterprisebasicinfo";
+    public function SelectEnterpriseBasicInfo($block){
+        if ($block == "all"){
+            $sql = "SELECT * FROM enterprisebasicinfo";
+        }else{
+            $sql = "SELECT * FROM enterprisebasicinfo where block='$block'";
+        }
+
         $result = $this->sql_helper->execute_dql2($sql);
         return $result;
     }

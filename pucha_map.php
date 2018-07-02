@@ -15,9 +15,11 @@
     <script src="js/leaflet/leaflet.js"></script>
     <script src="js/esri/esri-leaflet.js"></script>
     <script src="js/laydate/laydate.js"></script>
+
+    <script src="js/data/polygonData.js"></script>
+    <script src="js/data/polygonData2.js"></script>
     <script src="js/pucha_form.js"></script>
     <script src="js/pucha_mapset.js"></script>
-
 
 
     <style type="text/css">
@@ -36,14 +38,29 @@
         .get_geoJson{width: 32px; height: 32px;  position:fixed; right:30px; top:220px; background: #00aa00; z-index: 9999; cursor: pointer;}
         .legened{width: 150px; height: 200px; position:fixed; right:10px; bottom:10px; z-index:9999; background: #FFFFFF; opacity:0.95; border: solid 2px #C4C3BE;}
         .legened .title{width: 150px; height: 25px; line-height: 25px; text-align: center; background:#dfdfdf; border-bottom: solid 1px #C4C3BE;}
-        .legened .legenedContent{width: 150px; height: 174px; background: #2D93CA;}
-        .legened .legenedContent .list{width: 150px; height: 34.5px; background: #00aa00;}
+        .legened .legenedContent{width: 150px; height: 174px;}
+        .legened .legenedContent .list{width: 150px; height: 34.5px;}
+        .legened .legenedContent .list .left{width: 60px; height: 34.5px; line-height:34.5px; float: left;}
+        .legened .legenedContent .list .left img{margin-top: 8px; margin-left: 5px;}
+        .legened .legenedContent .list .left input{margin-left: 15px;}
+        .legened .legenedContent .list .right{width: 90px; height: 34.5px; line-height:34.5px; font-size: 12px; float: left;}
+        .chooseBlock{ width: 200px; height: 30px; position:fixed; left:80px; top:20px; z-index:9999;}
     </style>
 </head>
 
 <body>
     <!--地图内容-->
     <div id="mapDiv"></div>
+
+    <div class="chooseBlock">
+        <select name="blockselect" id="blockselect" style="width:200px; height: 30px; line-height: 30px; border-radius: 5px; border: solid 1px #999;">
+            <option value ="all">- - - - - - - 选择所属区 - - - - - - -</option>
+            <option value ="all">全部</option>
+            <option value="泉山区">泉山区</option>
+            <option value="铜山区">铜山区</option>
+            <option value="云龙区">云龙区</option>
+        </select>
+    </div>
 
     <!--底图切换-->
     <div class="changemap">
@@ -86,10 +103,23 @@
                     <div class="left"><label>法人代表：</label></div>
                     <div class="right"><input type="text" name="unit_peop" /></div>
                 </div>
-                <div class="item">
-                    <div class="left"><label>所在地：</label></div>
-                    <div class="right"><input type="text" name="adress" /></div>
+
+                <div class="item" style="height: auto;">
+                    <div class="left"><label>所在区：</label></div>
+                    <div class="right">
+                        <select name="block" style="width:210px; height: 25px; padding-left: 10px; border-radius: 5px; border: solid 1px #999;">
+                            <option value="泉山区">泉山区</option>
+                            <option value="铜山区">铜山区</option>
+                            <option value="云龙区">云龙区</option>
+                        </select>
+                    </div>
                 </div>
+
+                <div class="item" style="width: 100%">
+                    <div class="left" style="width: 15%"><label>所在地：</label></div>
+                    <div class="right" style="width: 85%"><input style="width: 550px;" type="text" name="adress" /></div>
+                </div>
+
                 <div class="item">
                     <div class="left"><label>经纬度：</label></div>
                     <div class="right">
@@ -119,8 +149,8 @@
                         </select>
                     </div>
                 </div>
-            </form>
 
+            </form>
 
             <div class="item" style="margin-top: 30px;">
                 <button type="button" onclick="submitBasicInfo()" style="margin-left: 200px;">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button>
@@ -135,11 +165,27 @@
     <div class="legened">
         <div class="title">图 例</div>
         <div class="legenedContent">
-            <div class="list"></div>
-<!--            <div class="list"></div>-->
-<!--            <div class="list"></div>-->
-<!--            <div class="list"></div>-->
-<!--            <div class="list"></div>-->
+            <div class="list">
+                <div class="left"><input onclick="clickCheckbox(this)" type="checkbox" checked="checked" value="1"><img src="images/point_industry_20.png"></div>
+                <div class="right">工业源</div>
+            </div>
+            <div class="list">
+                <div class="left"><input onclick="clickCheckbox(this)" type="checkbox" checked="checked" value="2"><img src="images/point_agriculture_20.png"></div>
+                <div class="right">农业源</div>
+            </div>
+            <div class="list">
+                <div class="left"><input onclick="clickCheckbox(this)" type="checkbox" checked="checked" value="3"><img src="images/point_life_20.png"></div>
+                <div class="right">生活源</div>
+            </div>
+            <div class="list">
+                <div class="left"><input onclick="clickCheckbox(this)" type="checkbox" checked="checked" value="4"><img src="images/point_move_20.png"></div>
+                <div class="right">移动源</div>
+            </div>
+            <div class="list">
+                <div class="left"><input onclick="clickCheckbox(this)" type="checkbox" checked="checked" value="5"><img src="images/point_sheshi_20.png"></div>
+                <div class="right">污染治理设施</div>
+            </div>
+
         </div>
     </div>
 </body>

@@ -35,10 +35,10 @@ function submitBasicInfo(){
                     "<p class='info_window'>单位名称："+ formdata[0].value +"</p>" +
                     "<p class='info_window'>单位代码："+ formdata[1].value +"</p>" +
                     "<p class='info_window'>法人代表："+ formdata[2].value +"</p>" +
-                    "<p class='info_window'>联系方式："+ formdata[6].value +"</p>" +
-                    "<p class='info_window'>所属行业："+ formdata[8].value +"</p>" +
-                    "<p class='info_window'>所在地址："+ formdata[3].value +"</p>" +
-                    "<p class='info_window'><a href='#' class='link_button' onClick='ZoomToPoint(\""+formdata[5].value+"\","+formdata[4].value+")'>缩放至</a><a href='#' onclick='open_win(\""+formdata[8].value+"\")' class='link_button'>污染信息</a></p>";
+                    "<p class='info_window'>联系方式："+ formdata[7].value +"</p>" +
+                    "<p class='info_window'>所属行业："+ formdata[9].value +"</p>" +
+                    "<p class='info_window'>所在地址："+ formdata[4].value +"</p>" +
+                    "<p class='info_window'><a href='#' class='link_button' onClick='ZoomToPoint(\""+formdata[6].value+"\","+formdata[5].value+")'>缩放至</a><a href='#' onclick='open_win(\""+formdata[9].value+"\")' class='link_button'>污染信息</a></p>";
                 marker.bindPopup(popupContent);
 
                 alert("提交成功!");
@@ -57,13 +57,13 @@ function submitBasicInfo(){
  * 从后台获取企业基本信息，并组织成GeoJson对象格式
  * @returns {{type: string, features: Array}}
  */
-function getBasicInfoAsGeoJson(){
+function getBasicInfoAsGeoJson(blockSelected){
     var GeoJson = {
         "type": "FeatureCollection",
         "features":[]
     };
     $.ajax({
-        url: "Web/SelectEnterpriseBasicInfo.php",
+        url: "Web/SelectEnterpriseBasicInfo.php?block="+blockSelected,
         type: "GET",
         async: false,
         dataType: 'json',

@@ -22,7 +22,6 @@ class InsertEnterpriseBasicInfoDao
      * @return int
      */
     public function InsertEnterpriseBasicInfo($EnterpriseBasicInfo){
-        print_r($EnterpriseBasicInfo);
 
         $sql = "INSERT INTO enterprisebasicinfo VALUES(".
             "'".$EnterpriseBasicInfo->getUnitName() ."'" .",".
@@ -33,7 +32,8 @@ class InsertEnterpriseBasicInfoDao
             "'".$EnterpriseBasicInfo->getCoordY() ."'" .",".
             "'".$EnterpriseBasicInfo->getTel() ."'" .",".
             "'".$EnterpriseBasicInfo->getStartTime()."'" .",".
-            "'".$EnterpriseBasicInfo->getBusinessRange()."'" .
+            "'".$EnterpriseBasicInfo->getBusinessRange()."'" .",".
+            "'".$EnterpriseBasicInfo->getBlock()."'" .
             ")";
 
         print_r($sql);

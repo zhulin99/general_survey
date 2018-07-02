@@ -37,6 +37,7 @@ $EnterpriseBasicInfo->setCoordY($handle['coordY']);
 $EnterpriseBasicInfo->setTel($handle['tel']);
 $EnterpriseBasicInfo->setStartTime($handle['startTime']);
 $EnterpriseBasicInfo->setBusinessRange($handle['businessRange']);
+$EnterpriseBasicInfo->setBlock($handle['block']);
 
 //调用Service层传入数据
 $InsertEnterpriseBasicInfoService = new InsertEnterpriseBasicInfoService();

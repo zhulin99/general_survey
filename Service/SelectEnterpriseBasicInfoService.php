@@ -10,17 +10,17 @@ require_once("../Dao/SelectEnterpriseBasicInfoDao.php");
 
 class SelectEnterpriseBasicInfoService
 {
-    private $SelectEnterpriseBasicInfoService;
+    private $SelectEnterpriseBasicInfoDao;
     public function __construct()
     {
-        $this->SelectEnterpriseBasicInfoService = new SelectEnterpriseBasicInfoDao();
+        $this->SelectEnterpriseBasicInfoDao = new SelectEnterpriseBasicInfoDao();
     }
 
     /**
      * @return int
      */
-    public function SelectEnterpriseBasicInfo(){
-        $result = $this->SelectEnterpriseBasicInfoService->SelectEnterpriseBasicInfo();
+    public function SelectEnterpriseBasicInfo($block){
+        $result = $this->SelectEnterpriseBasicInfoDao->SelectEnterpriseBasicInfo($block);
         return $result;
     }
 }

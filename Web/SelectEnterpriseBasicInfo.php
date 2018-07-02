@@ -17,9 +17,12 @@ require_once("../Service/SelectEnterpriseBasicInfoService.php");
 //}
 
 
+$block = $_GET['block'];
+
+
 //获取企业基本信息数据
 $SelectEnterpriseBasicInfoService = new SelectEnterpriseBasicInfoService();
-$result = $SelectEnterpriseBasicInfoService->SelectEnterpriseBasicInfo();
+$result = $SelectEnterpriseBasicInfoService->SelectEnterpriseBasicInfo($block);
 
 
 //定义GeoJson格式数据

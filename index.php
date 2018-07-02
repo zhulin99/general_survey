@@ -13,6 +13,8 @@ require_once ("config/CheckLogin.php")
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>
 </head>
+
+
 <body style="background-color:#f2f9fd;">
 <div class="header bg-main">
     <div class="logo margin-big-left fadein-top">
@@ -31,64 +33,61 @@ require_once ("config/CheckLogin.php")
 <div class="leftnav">
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
 
-    <h2><span class="icon-pencil-square-o"></span>普查表单</h2>
-    <ul>
-        <li>
-            <a id="subnav" target="right"><span class="icon-caret-right"></span>泉山区</a>
-            <ul id="subblock" style="margin-left: 12px; border-top: none">
-                <li><a href="puchaform_industry.php" target="right"><span class="icon-caret-right"></span>工业源</a>
-                <li><a href="puchaform_agriculture.php" target="right"><span class="icon-caret-right"></span>农业源</a>
-                <li><a href="puchaform_life.php" target="right"><span class="icon-caret-right"></span>生活源</a>
-                <li><a href="puchaform_sheshi.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>
-                <li><a href="puchaform_move.php" target="right"><span class="icon-caret-right"></span>移动源</a>
-            </ul>
-        </li>
-        <li>
-            <a id="subnav" target="right"><span class="icon-caret-right"></span>云龙区</a>
-            <ul id="subblock" style="margin-left: 12px; border-top: none">
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>
-            </ul>
-        </li>
-        <li>
-            <a id="subnav" target="right"><span class="icon-caret-right"></span>铜山区</a>
-            <ul id="subblock" style="margin-left: 12px; border-top: none">
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>
-            </ul>
-        </li>
-        <li>
-            <a id="subnav" target="right"><span class="icon-caret-right"></span>鼓楼区</a>
-            <ul id="subblock" style="margin-left: 12px; border-top: none">
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>
-            </ul>
-        </li>
-        <li>
-            <a id="subnav" target="right"><span class="icon-caret-right"></span>贾汪区</a>
-            <ul id="subblock" style="margin-left: 12px; border-top: none">
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>
-                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>
-            </ul>
-        </li>
-    </ul>
+<!--    <h2><span class="icon-pencil-square-o"></span>普查表单</h2>-->
+<!--    <ul>-->
+<!--        <li>-->
+<!--            <a id="subnav" target="right"><span class="icon-caret-right"></span>泉山区</a>-->
+<!--            <ul id="subblock" style="margin-left: 12px; border-top: none">-->
+<!--                <li><a href="puchaform_industry.php" target="right"><span class="icon-caret-right"></span>工业源</a>-->
+<!--                <li><a href="puchaform_agriculture.php" target="right"><span class="icon-caret-right"></span>农业源</a>-->
+<!--                <li><a href="puchaform_life.php" target="right"><span class="icon-caret-right"></span>生活源</a>-->
+<!--                <li><a href="puchaform_sheshi.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>-->
+<!--                <li><a href="puchaform_move.php" target="right"><span class="icon-caret-right"></span>移动源</a>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a id="subnav" target="right"><span class="icon-caret-right"></span>云龙区</a>-->
+<!--            <ul id="subblock" style="margin-left: 12px; border-top: none">-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a id="subnav" target="right"><span class="icon-caret-right"></span>铜山区</a>-->
+<!--            <ul id="subblock" style="margin-left: 12px; border-top: none">-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a id="subnav" target="right"><span class="icon-caret-right"></span>鼓楼区</a>-->
+<!--            <ul id="subblock" style="margin-left: 12px; border-top: none">-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a id="subnav" target="right"><span class="icon-caret-right"></span>贾汪区</a>-->
+<!--            <ul id="subblock" style="margin-left: 12px; border-top: none">-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>工业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>农业源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>生活源</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>集中式污染治理设施</a>-->
+<!--                <li><a href="classify_example.php" target="right"><span class="icon-caret-right"></span>移动源</a>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--    </ul>-->
 
-    <h2><span class="icon-globe"></span>地图查询</h2>
-    <ul>
-        <li><a href="pucha_map.php" target="right"><span class="icon-caret-right"></span>普查地图</a></li>
-    </ul>
+    <h2><a href="pucha_map.php" target="right"><span class="icon-globe"></span>污染源普查</a></h2>
 
     <h2><span class="icon-pencil-square-o"></span>检测功能</h2>
     <ul>
