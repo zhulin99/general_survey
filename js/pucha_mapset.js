@@ -270,6 +270,7 @@ function addAllBlockPolygons(){
     map.fitBounds(blockLayers.getBounds());
 }
 
+
 /**
  * 初始化地图
  */
@@ -424,16 +425,19 @@ function draw_point() {
     $(".leaflet-grab").css('cursor','crosshair');
 
     var lat, lng;
-    map.once('mousedown', function (e) {
-        lat = e.latlng.lat.toFixed(4);
-        lng = e.latlng.lng.toFixed(4);
-
-        marker = L.marker([lat, lng],{icon: industryIcon}).addTo(map);
-    })
+    // map.once('mousedown', function (e) {
+    //     lat = e.latlng.lat.toFixed(4);
+    //     lng = e.latlng.lng.toFixed(4);
+    //
+    //     marker = L.marker([lat, lng],{icon: industryIcon}).addTo(map);
+    // })
 
 	map.once('mouseup', function (e) {
         $(".leaflet-grab").css('cursor','-webkit-grab');
         $('#modalwindow').slideDown(200);
+
+        lat = e.latlng.lat.toFixed(4);
+        lng = e.latlng.lng.toFixed(4);
         $('#modalwindow #lng').val(lng);
         $('#modalwindow #lat').val(lat);
 

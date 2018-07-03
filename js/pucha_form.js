@@ -30,7 +30,12 @@ function submitBasicInfo(){
         data: {'data': formdata},
         success: function(data){
             if (data != 0){
+                alert("提交成功!");
 
+                //获取所有信息
+                var basicInfo = [formdata[0].value, formdata[1].value, formdata[2].value, formdata[7].value, formdata[9].value, formdata[4].value, formdata[8].value, formdata[6].value, formdata[5].value];
+
+                //提交成功后给marker绑定popwindow
                 var popupContent =
                     "<p class='info_window'>单位名称："+ formdata[0].value +"</p>" +
                     "<p class='info_window'>单位代码："+ formdata[1].value +"</p>" +
@@ -38,10 +43,31 @@ function submitBasicInfo(){
                     "<p class='info_window'>联系方式："+ formdata[7].value +"</p>" +
                     "<p class='info_window'>所属行业："+ formdata[9].value +"</p>" +
                     "<p class='info_window'>所在地址："+ formdata[4].value +"</p>" +
-                    "<p class='info_window'><a href='#' class='link_button' onClick='ZoomToPoint(\""+formdata[6].value+"\","+formdata[5].value+")'>缩放至</a><a href='#' onclick='open_win(\""+formdata[9].value+"\")' class='link_button'>污染信息</a></p>";
-                marker.bindPopup(popupContent);
+                    "<p class='info_window'><a href='#' class='link_button' onClick='ZoomToPoint(\""+formdata[6].value+"\","+formdata[5].value+")'>缩放至</a><a href='#' onclick='open_win(\""+basicInfo+"\")' class='link_button'>污染信息</a></p>";
 
-                alert("提交成功!");
+                switch (formdata[9].value){
+                    case "工业源":
+                        marker = L.marker([formdata[6].value, formdata[5].value], {icon: industryIcon}).addTo(map);
+                        marker.bindPopup(popupContent);
+                        return;
+                    case "农业源":
+                        marker = L.marker([formdata[6].value, formdata[5].value], {icon: argicultureIcon}).addTo(map);
+                        marker.bindPopup(popupContent);
+                        return;
+                    case "生活源":
+                        marker = L.marker([formdata[6].value, formdata[5].value], {icon: lifeIcon}).addTo(map);
+                        marker.bindPopup(popupContent);
+                        return;
+                    case "移动源":
+                        marker = L.marker([formdata[6].value, formdata[5].value], {icon: moveIcon}).addTo(map);
+                        marker.bindPopup(popupContent);
+                        return;
+                    case "集中式污染治理设施":
+                        marker = L.marker([formdata[6].value, formdata[5].value], {icon: sheshiIcon}).addTo(map);
+                        marker.bindPopup(popupContent);
+                        return;
+                }
+
             }else {
                 alert("提交失败!");
             }

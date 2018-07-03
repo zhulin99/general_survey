@@ -15,51 +15,37 @@
       <file leaf-file-name="pucha_map.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pucha_map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="748">
+              <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="43" selection-end-line="147" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pucha_mapset.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pucha_mapset.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/pucha_mapset.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="268" column="0" lean-forward="true" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state relative-caret-position="274">
+              <caret line="145" column="215" lean-forward="true" selection-start-line="144" selection-start-column="8" selection-end-line="145" selection-end-column="215" />
               <folding>
                 <element signature="e#2244#2365#0" expanded="false" />
                 <element signature="e#2404#2528#0" expanded="false" />
                 <element signature="e#2560#2677#0" expanded="false" />
                 <element signature="e#2709#2826#0" expanded="false" />
                 <element signature="e#2866#2985#0" expanded="false" />
-                <element signature="n#!!block;n#addMyPointLayers#0" expanded="false" />
-                <element signature="e#8723#8736#0" expanded="false" />
-                <element signature="e#10117#10143#0" expanded="false" />
+                <element signature="n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+                <element signature="n#!!block;n#getColor#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+                <element signature="n#!!block;n#style#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+                <element signature="n#!!block;n#highlightFeature#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+                <element signature="e#8724#8737#0" expanded="false" />
+                <element signature="e#10118#10144#0" expanded="false" />
                 <element signature="n#!!doc;n#open_win#0" expanded="false" />
                 <element signature="n#!!block;n#open_win#0" expanded="false" />
                 <element signature="n#!!doc;n#ZoomToPoint#0" expanded="false" />
                 <element signature="n#!!block;n#ZoomToPoint#0" expanded="false" />
                 <element signature="n#!!doc;n#setBaseMap#0" expanded="false" />
                 <element signature="n#!!block;n#setBaseMap#0" expanded="false" />
-                <element signature="e#13327#13343#0" expanded="false" />
-                <element signature="n#!!block;n#draw_point#0" expanded="false" />
+                <element signature="e#13328#13344#0" expanded="false" />
                 <element signature="n#!!doc;n#remove_obj#0" expanded="false" />
                 <element signature="n#!!block;n#remove_obj#0" expanded="false" />
                 <element signature="n#!!doc;n#closeWindow#0" expanded="false" />
@@ -74,7 +60,7 @@
       <file leaf-file-name="polygonData2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/data/polygonData2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3872">
+            <state relative-caret-position="875">
               <caret line="176" column="29" lean-forward="false" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
               <folding />
             </state>
@@ -96,9 +82,25 @@
       <file leaf-file-name="pucha_form.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/pucha_form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="369">
+              <caret line="40" column="79" lean-forward="true" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="131" column="39" lean-forward="true" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+              <folding>
+                <marker date="1530600415482" expanded="false" signature="1736:1771" ph="..." />
+                <marker date="1530600415482" expanded="false" signature="2583:2618" ph="..." />
+                <marker date="1530600415482" expanded="false" signature="3427:3462" ph="..." />
+                <marker date="1530600415482" expanded="false" signature="4271:4306" ph="..." />
+                <marker date="1530600415482" expanded="false" signature="5115:5150" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,17 +165,17 @@
         <option value="$PROJECT_DIR$/puchaform_sheshi.php" />
         <option value="$PROJECT_DIR$/js/data/polygonData.js" />
         <option value="$PROJECT_DIR$/js/data/polygonData2.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Service/SelectEnterpriseBasicInfoService.php" />
         <option value="$PROJECT_DIR$/Dao/SelectEnterpriseBasicInfoDao.php" />
         <option value="$PROJECT_DIR$/Web/SelectEnterpriseBasicInfo.php" />
         <option value="$PROJECT_DIR$/css/mtWindow.css" />
-        <option value="$PROJECT_DIR$/js/pucha_form.js" />
         <option value="$PROJECT_DIR$/domain/EnterpriseBasicInfo.php" />
         <option value="$PROJECT_DIR$/Web/InsertEnterpriseBasicInfo.php" />
         <option value="$PROJECT_DIR$/Dao/InsertEnterpriseBasicInfoDao.php" />
         <option value="$PROJECT_DIR$/pucha_map.php" />
         <option value="$PROJECT_DIR$/js/pucha_mapset.js" />
+        <option value="$PROJECT_DIR$/js/pucha_form.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -227,6 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,42 +243,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="general_survey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="general_survey" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="general_survey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="general_survey" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,12 +371,13 @@
       <workItem from="1529984446177" duration="21133000" />
       <workItem from="1530067074526" duration="4584000" />
       <workItem from="1530153188070" duration="73328000" />
-      <workItem from="1530411923828" duration="56180000" />
+      <workItem from="1530411923828" duration="56249000" />
+      <workItem from="1530588305616" duration="2991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155225000" />
+    <option name="totallyTimeSpent" value="158285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -416,7 +387,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2042328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,6 +399,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17336152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2042328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -474,7 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,7 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,7 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,9 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="42" column="20" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="42" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,9 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="734">
           <caret line="72" column="5" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <marker date="1529998210110" expanded="true" signature="467:2298" ph="INSERT INTO industry_form... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="24" column="82" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <marker date="1530416709230" expanded="true" signature="430:1805" ph="INSERT INTO industry_form... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,25 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1434">
-          <caret line="89" column="93" lean-forward="false" selection-start-line="89" selection-start-column="93" selection-end-line="89" selection-end-column="93" />
-          <folding>
-            <marker date="1530529388267" expanded="false" signature="1736:1771" ph="..." />
-            <marker date="1530529388267" expanded="false" signature="2583:2618" ph="..." />
-            <marker date="1530529388267" expanded="false" signature="3427:3462" ph="..." />
-            <marker date="1530529388267" expanded="false" signature="4271:4306" ph="..." />
-            <marker date="1530529388267" expanded="false" signature="5115:5150" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="33" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="24" column="97" lean-forward="false" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="97" />
-          <folding>
-            <marker date="1528705681128" expanded="true" signature="422:529" ph="select user_... img_users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,11 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1530532672469" expanded="true" signature="434:467" ph="SELECT * FRO... enterprisebasicinfo" />
-            <marker date="1530532672469" expanded="true" signature="505:538" ph="SELECT * FRO... enterprisebasicinfo" />
-            <marker date="1530532672469" expanded="true" signature="505:559" ph="SELECT * FRO... enterprisebasicinfo" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,10 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-          <folding>
-            <marker date="1530535193480" expanded="true" signature="450:1066" ph="INSERT INTO enterprisebasicinfo... " />
-            <marker date="1530535193480" expanded="true" signature="450:1121" ph="INSERT INTO industry_form... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,39 +731,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pucha_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pucha_map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#4;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#form#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="748">
+          <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="43" selection-end-line="147" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/data/polygonData2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="176" column="29" lean-forward="false" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -865,41 +760,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/polygonData2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3872">
-          <caret line="176" column="29" lean-forward="false" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/pucha_mapset.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="268" column="0" lean-forward="true" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state relative-caret-position="274">
+          <caret line="145" column="215" lean-forward="true" selection-start-line="144" selection-start-column="8" selection-end-line="145" selection-end-column="215" />
           <folding>
             <element signature="e#2244#2365#0" expanded="false" />
             <element signature="e#2404#2528#0" expanded="false" />
             <element signature="e#2560#2677#0" expanded="false" />
             <element signature="e#2709#2826#0" expanded="false" />
             <element signature="e#2866#2985#0" expanded="false" />
-            <element signature="n#!!block;n#addMyPointLayers#0" expanded="false" />
-            <element signature="e#8723#8736#0" expanded="false" />
-            <element signature="e#10117#10143#0" expanded="false" />
+            <element signature="n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+            <element signature="n#!!block;n#getColor#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+            <element signature="n#!!block;n#style#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+            <element signature="n#!!block;n#highlightFeature#0;n#!!block;n#addAllBlockPolygons#0" expanded="false" />
+            <element signature="e#8724#8737#0" expanded="false" />
+            <element signature="e#10118#10144#0" expanded="false" />
             <element signature="n#!!doc;n#open_win#0" expanded="false" />
             <element signature="n#!!block;n#open_win#0" expanded="false" />
             <element signature="n#!!doc;n#ZoomToPoint#0" expanded="false" />
             <element signature="n#!!block;n#ZoomToPoint#0" expanded="false" />
             <element signature="n#!!doc;n#setBaseMap#0" expanded="false" />
             <element signature="n#!!block;n#setBaseMap#0" expanded="false" />
-            <element signature="e#13327#13343#0" expanded="false" />
-            <element signature="n#!!block;n#draw_point#0" expanded="false" />
+            <element signature="e#13328#13344#0" expanded="false" />
             <element signature="n#!!doc;n#remove_obj#0" expanded="false" />
             <element signature="n#!!block;n#remove_obj#0" expanded="false" />
             <element signature="n#!!doc;n#closeWindow#0" expanded="false" />
             <element signature="n#!!block;n#closeWindow#0" expanded="false" />
             <element signature="n#!!doc;n#clickCheckbox#0" expanded="false" />
             <element signature="n#!!block;n#clickCheckbox#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pucha_form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="40" column="79" lean-forward="true" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="131" column="39" lean-forward="true" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+          <folding>
+            <marker date="1530600415482" expanded="false" signature="1736:1771" ph="..." />
+            <marker date="1530600415482" expanded="false" signature="2583:2618" ph="..." />
+            <marker date="1530600415482" expanded="false" signature="3427:3462" ph="..." />
+            <marker date="1530600415482" expanded="false" signature="4271:4306" ph="..." />
+            <marker date="1530600415482" expanded="false" signature="5115:5150" ph="..." />
           </folding>
         </state>
       </provider>

@@ -146,7 +146,7 @@ require_once ("config/CheckLogin.php")
 
 
 <div class="admin">
-    <iframe scrolling="auto" rameborder="0" src="classify_example.php" name="right" width="100%" height="100%">
+    <iframe scrolling="auto" rameborder="0" src="pucha_map.php" name="right" width="100%" height="100%">
 
     </iframe>
 </div>
